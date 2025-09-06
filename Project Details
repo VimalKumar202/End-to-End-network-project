@@ -1,1 +1,84 @@
+End-to-End-network-project
 
+🌐 Network Components
+🔹 Routers
+
+Router1 (Left - ISR 4331)
+
+Interfaces:
+
+Gig0/0/0 → 10.0.0.7/8 (LAN side)
+
+Gig0/0/1 → 192.168.100.2/24 (MPLS side, Primary link)
+
+Router2 (Right - ISR 4321)
+
+Interfaces:
+
+Gig0/0/0 → 192.168.1.7/24 (LAN side)
+
+Gig0/0/1 → 192.168.10.1/24 (MPLS side, Primary link)
+
+Router0 (Middle - ISR 4351)
+
+Acts as a P2P Backup Router
+
+Interfaces:
+
+Gig0/0/0 → 10.0.0.10/8 (LAN A side)
+
+Gig0/0/1 → 192.168.1.10/24 (LAN B side)
+
+🔹 Switches
+
+Switch0 (Left – 2960-24TT)
+
+Connected to Router1
+
+Distributes IPs in LAN A (10.0.0.0/8)
+
+Connected to:
+
+PC0 → 10.0.0.1
+
+PC1 → 10.0.0.2
+
+Switch1 (Right – 2960-24TT)
+
+Connected to Router2
+
+Distributes IPs in LAN B (192.168.1.0/24)
+
+Connected to:
+
+PC2 → 192.168.1.1
+
+PC3 → 192.168.1.2
+
+🔹 PCs
+
+LAN A (Left):
+
+PC0 → 10.0.0.1
+
+PC1 → 10.0.0.2
+
+LAN B (Right):
+
+PC2 → 192.168.1.1
+
+PC3 → 192.168.1.2
+
+📡 Connectivity Flow
+
+Primary Link (MPLS):
+
+Connects Router1 ↔ Router2 via 192.168.100.2/24 and 192.168.10.1/24.
+
+Used as the main communication channel between LAN A and LAN B.
+
+Backup Link (P2P via Router0):
+
+If MPLS fails, traffic flows through Router0.
+
+Router0 provides a direct point-to-point backup path using 10.0.0.10/8 ↔ 192.168.1.10/24.

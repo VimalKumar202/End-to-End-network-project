@@ -1,0 +1,46 @@
+# End-to-End Network Building & Configuration Project
+
+This project demonstrates an **enterprise-level network design and configuration** built in Cisco Packet Tracer.  
+The network includes **MPLS as the primary link** and a **P2P backup link**, ensuring redundancy and fault tolerance.
+
+---
+
+## 🖥️ Project Overview
+- Designed a **company-wide LAN/WAN architecture**
+- Configured routers, switches, and end devices with proper IP addressing
+- Implemented **Primary (MPLS)** and **Backup (P2P)** connections
+- Verified connectivity across multiple subnets
+- Demonstrated redundancy and failover
+
+---
+
+## 📂 Project Files
+- `End-to-End-Network.pkt` → Cisco Packet Tracer file  
+- `network-diagram.png` → Topology screenshot  
+
+---
+
+## ⚙️ Tools & Technologies
+- Cisco Packet Tracer  
+- Routers & Switches (ISR 4321, ISR 4331, Catalyst 2960)  
+- IP Addressing, Subnetting, Static Routes  
+- MPLS and P2P links  
+
+---
+
+## 🚀 How to Run
+1. Download and install **Cisco Packet Tracer**  
+2. Open the `End-to-End-Network.pkt` file  
+3. Explore configurations on routers & switches  
+4. Test connectivity between PCs  
+
+---
+
+## 📸 Network Topology
+![Network Diagram](network-diagram.png)
+
+---
+
+## 📌 Author
+**Vimal Kumar**  
+Aspiring Cybersecurity Enthusiast | Developer | Networking Learner
